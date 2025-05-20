@@ -88,19 +88,19 @@ lovelace:
 ## 📸 Screenshots
 <details>
   <summary>📊 Watering Logs complete</summary>
-  <img src="https://github.com/DanStasiak/growcube-home-assistant/assets/log_screenshot.png" width="600">
+  <img src="assets/log_screenshot.png" width="600">
 </details>
 <details>
   <summary>🌱 Today’s Log</summary>
-  <img src="https://github.com/DanStasiak/growcube-home-assistant/assets/preview-today.png" width="600">
+  <img src="assets/preview-today.png" width="600">
 </details>
 <details>
   <summary>📊 Watering Weekly Logs</summary>
-  <img src="https://github.com/DanStasiak/growcube-home-assistant/assets/preview-weekly.png" width="600">
+  <img src="assets/preview-weekly.png" width="600">
 </details>
 <details>
   <summary>📊 Watering Summary</summary>
-  <img src="https://github.com/DanStasiak/growcube-home-assistant/assets/preview-summary.png" width="600">
+  <img src="assets/preview-summary.png" width="600">
 </details>
 
 ---
