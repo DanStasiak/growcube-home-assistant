@@ -41,3 +41,19 @@ lovelace:
 ```
 
 Enjoy automated plant care! 🌿
+
+## ❤️ Credits
+
+Built with 💧 by the Home Assistant + GrowCube community.
+
+---
+
+## ☕ Support This Project
+
+If you found this useful, you can support future work here:
+
+<a href="https://buymeacoffee.com/dstasiak" target="_blank">
+  <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-%23FFDD00.svg?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee">
+</a>
+
+---
