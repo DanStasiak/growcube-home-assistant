@@ -32,7 +32,7 @@ blueprint:
           domain: binary_sensor
     phone_notify_service:
       name: Default Mobile Notification Service
-      default: notify.mobile_app_danphone
+      default: notify."your_phone"
       selector:
         text:
     email_notify_service:
@@ -126,13 +126,13 @@ action:
           - condition: template
             value_template: "{{ plant_push_notify | trim != '' }}"
         sequence:
-          - service: notify.mobile_app_danphone
+          - service: notify."your_phone"
             data:
               title: "🌱 Watering {{ plant_name }}"
               message: "Moisture of plant ≤{{ low }}. Watering until ≥{{ high }}."
       - conditions: []
         sequence:
-          - service: notify.mobile_app_danphone
+          - service: notify."your_phone"
             data:
               title: "🌱 Watering {{ plant_name }}"
               message: "Moisture of plant ≤{{ low }}. Watering until ≥{{ high }}."
@@ -180,7 +180,7 @@ action:
           - condition: template
             value_template: "{{ states(water_warning_sensor_entity) == 'on' }}"
         sequence:
-          - service: notify.mobile_app_danphone
+          - service: notify."your_phone"
             data:
               title: "⚠️ {{ plant_name }} Low Water"
               message: "GrowCube reports water tank empty."
