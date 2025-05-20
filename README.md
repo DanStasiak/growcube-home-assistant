@@ -1,29 +1,68 @@
-![GrowCube HA](https://img.shields.io/badge/GrowCube-Automated-green?style=flat-square&logo=home-assistant)[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=flat-square)](https://hacs.xyz)
+# 🌿 GrowCube Home Assistant Integration
 
-# 🌱 GrowCube Home Assistant Automation
+[![hass-version](https://img.shields.io/badge/Home%20Assistant-2024.5+-blue?logo=home-assistant)](https://www.home-assistant.io)
+[![license](https://img.shields.io/github/license/DanStasiak/growcube-home-assistant)](LICENSE)
 
-A complete GrowCube auto-watering system for Home Assistant.
+This is a fully featured Home Assistant automation package for the [GrowCube](https://www.gardena.com/int/products/smart/irrigation/growcube/) smart plant watering system. It includes:
 
-## Features
+- ✅ Automatic moisture-based plant watering
+- 📊 Logging with per-plant stats
+- 📨 Email + push notifications
+- 🗓️ Daily & weekly summary reports
+- 📈 Lovelace view for visualization
+- 💾 Modular YAML + Pyscript logic
 
-- 🌱 Moisture-based watering with thresholds
-- 🔁 Adjustable watering cycle + dry-run mode
-- 📊 Per-plant logging with daily/weekly summaries
-- 💬 Notifications via email/mobile
-- 📈 Lovelace UI view with summaries
-- 🧠 Powered by `pyscript.set_state`
+---
 
-## Installation
+## 🚀 Quick Start
 
-1. Copy folders to your Home Assistant `/config/` directory:
-   - `blueprints/automation/`
-   - `scripts/`
-   - `automations/`
-   - `sensors/`
-   - `pyscript/`
-   - `lovelace/`
+### 📘 Blueprint Import
 
-2. In `configuration.yaml`, include:
+Paste this in your Home Assistant:
+
+```
+https://raw.githubusercontent.com/DanStasiak/growcube-home-assistant/main/blueprints/automation/growcube_auto_water_blueprint.yaml
+```
+
+Then go to:  
+**Settings → Automations & Scenes → Blueprints → Import Blueprint**
+
+---
+
+## 📁 Included Components
+
+```text
+📂 blueprints/
+  └── automation/growcube_auto_water_blueprint.yaml
+📂 scripts/
+  └── log_growcube_watering.yaml
+📂 automations/
+  ├── growcube_daily_summary.yaml
+  ├── growcube_weekly_summary.yaml
+  └── growcube_reset_daily.yaml
+📂 sensors/
+  └── growcube_watering_log.yaml
+📂 pyscript/
+  └── set_state.py
+📂 lovelace/
+  └── view_growcube_logs.yaml
+📄 README.md
+```
+
+---
+
+## 🛠 Installation
+
+1. Copy these folders to your Home Assistant `/config/` directory:
+    - `blueprints/`
+    - `scripts/`
+    - `automations/`
+    - `sensors/`
+    - `pyscript/`
+    - `lovelace/`
+
+2. Add or update your `configuration.yaml`:
+
 ```yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
@@ -35,14 +74,48 @@ lovelace:
 ```
 
 3. Restart Home Assistant.
-4. Import the blueprint from:
-   `blueprints/automation/growcube_auto_water_blueprint.yaml`
-5. Add Lovelace view:
+
+4. Import the blueprint and create automations for each plant.
+
+5. Add the Lovelace view to `ui-lovelace.yaml`:
+
 ```yaml
 - !include lovelace/view_growcube_logs.yaml
 ```
 
-Enjoy automated plant care! 🌿
+---
+
+## 📸 Screenshots
+
+<details>
+  <summary>🌱 Today’s Log</summary>
+  <img src="https://github.com/DanStasiak/growcube-home-assistant/assets/preview-today.png" width="600">
+</details>
+
+<details>
+  <summary>📊 Watering Summary</summary>
+  <img src="https://github.com/DanStasiak/growcube-home-assistant/assets/preview-summary.png" width="600">
+</details>
+
+---
+
+## 📬 Notifications
+
+You’ll receive:
+- Email summaries daily & weekly
+- Mobile push per watering cycle
+- Water tank empty alerts
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork, improve or submit a pull request.
+Questions? Join the conversation on the [Home Assistant Forum](https://community.home-assistant.io/c/blueprints-exchange/).
+
+---
+
+**Enjoy your smart plants! 🌿**
 
 ## ❤️ Credits
 
