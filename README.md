@@ -86,6 +86,10 @@ lovelace:
 ---
 
 ## 📸 Screenshots
+<details>
+  <summary>📊 Watering Logs complete</summary>
+  <img src="https://github.com/DanStasiak/growcube-home-assistant/assets/log_screenshot.png" width="600">
+</details>
 
 <details>
   <summary>🌱 Today’s Log</summary>
