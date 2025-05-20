@@ -1,4 +1,6 @@
-# GrowCube Home Assistant Automation
+![GrowCube HA](https://img.shields.io/badge/GrowCube-Automated-green?style=flat-square&logo=home-assistant)[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=flat-square)](https://hacs.xyz)
+
+# 🌱 GrowCube Home Assistant Automation
 
 A complete GrowCube auto-watering system for Home Assistant.
 
